@@ -1,0 +1,9 @@
+1. ILSA coarse seismic data shows continuous low-amplitude fluctuations across X, Y, and Z axes.
+
+2. Fine sensor channels remain mostly constant during the observation period.
+
+3. Temperature readings remain relatively stable between 60°C and 64°C.
+
+4. X-axis temperature shows slight increases near the end of the observation window.
+
+5. Raw seismic signals contain noise and small oscillatory variations.

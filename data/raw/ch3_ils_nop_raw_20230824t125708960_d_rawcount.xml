@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:disp="http://pds.nasa.gov/pds4/disp/v1" xmlns:pds="http://pds.nasa.gov/pds4/pds/v1" xmlns:sp="http://pds.nasa.gov/pds4/sp/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 http://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd  http://pds.nasa.gov/pds4/disp/v1 http://pds.nasa.gov/pds4/disp/v1/PDS4_DISP_1301.xsd  http://pds.nasa.gov/pds4/sp/v1 http://pds.nasa.gov/pds4/sp/v1/PDS4_SP_1100.xsd">
+ <Identification_Area>
+  <logical_identifier>urn:isro:isda:ch3_chl.ils:data_raw:ch3_ils_nop_raw_20230824t125708960_d_rawcount</logical_identifier>
+  <version_id>1.0</version_id>
+  <title>CH3 ILSA STUDIES</title>
+  <information_model_version>1.11.0.0</information_model_version>
+  <product_class>Product_Observational</product_class>
+  <Modification_History>
+   <Modification_Detail>
+    <modification_date>2024-05-13</modification_date>
+    <version_id>1.0</version_id>
+    <description>PDS4 product label created by LEOS ILSA PDS4 team</description>
+   </Modification_Detail>
+  </Modification_History>
+ </Identification_Area>
+ <Observation_Area>
+  <Time_Coordinates>
+   <start_date_time>2023-08-24T12:57:08.960Z</start_date_time>
+   <stop_date_time>2023-08-24T13:02:02.328Z</stop_date_time>
+  </Time_Coordinates>
+  <Primary_Result_Summary>
+   <purpose>Science</purpose>
+   <processing_level>Raw</processing_level>
+   <description>Science Data</description>
+  </Primary_Result_Summary>
+  <Investigation_Area>
+   <name>Chandrayaan-3</name>
+   <type>Mission</type>
+   <Internal_Reference>
+    <lidvid_reference>urn:isro:isda:context:investigation:mission.chandrayaan3::1.0</lidvid_reference>
+    <reference_type>data_to_investigation</reference_type>
+   </Internal_Reference>
+  </Investigation_Area>
+  <Observing_System>
+   <name>ILSA</name>
+   <description>ILSA payload of Chandrayaan-3 (Lander)</description>
+   <Observing_System_Component>
+    <name>ILSA</name>
+    <type>Instrument</type>
+    <description>Instrument for Lunar Seismic Activity (ILSA) on Chandrayaan-3 lander mission, which is seismometer based Instrument characterizing the seismic activity of the moon around the landing site, delineating the strucutre of the lunar crust and mantle. Further artificial events such as rover movement, operations of Instruments like ChASTE and LIBS. This instrument is a three axis based coarse and fine sensor.</description>
+   </Observing_System_Component>
+  </Observing_System>
+  <Target_Identification>
+   <name>Moon</name>
+   <type>Satellite</type>
+   <description>Moon is a natural satellite body of the earth.</description>
+  </Target_Identification>
+ </Observation_Area>
+ <File_Area_Observational>
+  <File>
+   <file_name>ch3_ils_nop_raw_20230824t125708960_d_rawcount.csv</file_name>
+   <creation_date_time>2024-05-13T10:14:31.444</creation_date_time>
+   <file_size unit="byte">6040524</file_size>
+   <records>58556</records>
+   <md5_checksum>9e5fd24d0dee13b096918e036203de89</md5_checksum>
+  </File>
+  <Header>
+   <name>Column headings for TABLE</name>
+   <local_identifier>header</local_identifier>
+   <offset unit="byte">0</offset>
+   <object_length unit="byte">131</object_length>
+   <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+  </Header>
+  <Table_Delimited>
+   <name>Lookout table for Level-1 data product</name>
+   <local_identifier>Table</local_identifier>
+   <offset unit="byte">132</offset>
+   <parsing_standard_id>PDS DSV 1</parsing_standard_id>
+   <description>Table contains the Raw data interms of Capacitance(pF) for coarse sensor and voltage(volt) for fine sensor along X,Y and Z axes, temperatures of each axis and Time.</description>
+   <records>58556</records>
+   <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+   <field_delimiter>Comma</field_delimiter>
+   <Record_Delimited>
+	  <fields>10</fields>
+	  <groups>0</groups>
+	  
+	  <Field_Delimited>
+		<name>Time</name>
+		<field_number>1</field_number>
+		<data_type>ASCII_Date_Time_YMD_UTC</data_type>
+		<unit>ms</unit>
+		<description>UTC Time</description>
+	  </Field_Delimited>
+	  
+	  <Field_Delimited>
+		<name>xTemp</name>
+		<field_number>2</field_number>
+		<data_type>ASCII_Integer</data_type>
+		<unit>degC</unit>
+		<description>X-Axis Temperature(degC)</description>
+	  </Field_Delimited>
+	  
+	  <Field_Delimited>
+		<name>zTemp</name>
+		<field_number>3</field_number>
+		<data_type>ASCII_Integer</data_type>
+		<unit>degC</unit>
+		<description>Z-Axis Temperature(degC)</description>
+	  </Field_Delimited>
+	  
+	  <Field_Delimited>
+		<name>yTemp</name>
+		<field_number>4</field_number>
+		<data_type>ASCII_Integer</data_type>
+		<unit>degC</unit>
+		<description>Y-Axis Temperature(degC)</description>
+	  </Field_Delimited>
+	  
+	  <Field_Delimited>
+		<name>X-Axis Coarse Data</name>
+		<field_number>5</field_number>
+		<data_type>ASCII_Real</data_type>
+		<unit>pF</unit>
+		<description>Raw Coarse Data for X-Axis</description>
+	  </Field_Delimited>
+	  
+	  <Field_Delimited>
+		<name>X-Axis Fine Data</name>
+		<field_number>6</field_number>
+		<data_type>ASCII_Real</data_type>
+		<unit>volt</unit>
+		<description>Raw Fine Data for X-Axis</description>
+	  </Field_Delimited>
+	  
+	  <Field_Delimited>
+		<name>Y-Axis Coarse Data</name>
+		<field_number>7</field_number>
+		<data_type>ASCII_Real</data_type>
+		<unit>pF</unit>
+		<description>Raw Coarse Data for Y-Axis</description>
+	  </Field_Delimited>
+	  
+	  <Field_Delimited>
+		<name>Y-Axis Fine Data</name>
+		<field_number>8</field_number>
+		<data_type>ASCII_Real</data_type>
+		<unit>volt</unit>
+		<description>Raw Fine Data for Y-Axis</description>
+	  </Field_Delimited>
+	  
+	  <Field_Delimited>
+		<name>Z-Axis Coarse Data</name>
+		<field_number>9</field_number>
+		<data_type>ASCII_Real</data_type>
+		<unit>pF</unit>
+		<description>Raw Coarse Data for Z-Axis</description>
+	  </Field_Delimited>
+	  
+	  <Field_Delimited>
+		<name>Z-Axis Fine Data</name>
+		<field_number>10</field_number>
+		<data_type>ASCII_Real</data_type>
+		<unit>volt</unit>
+		<description>Raw Fine Data fore Z-Axis</description>
+	  </Field_Delimited>
+	  
+   </Record_Delimited>
+  </Table_Delimited>
+ </File_Area_Observational>
+</Product_Observational>
